@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Littlefoot Demo</title>
+    <link rel="stylesheet" href="./littlefoot/dist/littlefoot.css">
+    <script src="./littlefoot/dist/littlefoot.js"></script>
+</head>
+<body>
+    <!-- Links -->
+    <p>
+        This is a sentence with a footnote<sup id="fnref:1">
+            <a href="#fn:1">1</a>
+        </sup>.
+    </p>
+
+    <!-- Footnote List -->
+    <div class="footnotes">
+        <ol>
+            <li class="footnote" id="fn:1">
+                <p>This is the footnote content. <a href="#fnref:1" title="return to article"> ↩</a></p>
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        littlefoot.default()
+    </script>
+</body>
+</html>
